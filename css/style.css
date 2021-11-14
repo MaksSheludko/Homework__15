@@ -1,0 +1,297 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap&subset=cyrillic-ext");
+/* Подключение шрифта из папки */
+
+/* Подключение шрифта из папки */
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+li {
+   list-style: none;
+}
+a,
+a:visited {
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+img {
+   vertical-align: top;
+}
+html,
+body {
+   height: 100%;
+}
+html {
+   /* по умолчанию */
+   /* font-size: 16px;  */
+}
+body {
+   line-height: 1;
+   color: #4b4b4b;
+   font-family: "Roboto";
+   background-color: #f5f5f5;
+}
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+/* ------------------------------ */
+.header__main {
+   text-transform: uppercase;
+   font-size: 70px;
+   font-weight: 700;
+   text-align: center;
+   padding: 50px;
+   color: #02133c;
+}
+
+/*==========================================================================================================*/
+.main {
+   flex-grow: 1;
+}
+
+/*==========================================================================================================*/
+[class*="__container"] {
+   max-width: 1050px;
+   margin: 0px auto;
+   padding: 0px 15px;
+}
+/*==========================================================================================================*/
+.services {
+   padding: 30px 0px 112px 0px;
+}
+.services__container {
+   display: flex;
+   flex-direction: column;
+}
+.services__header {
+   margin: 0px 0px 74px 0px;
+}
+.header-services {
+}
+.header-services__subtitle {
+   font-weight: bold;
+   font-size: 12px;
+   line-height: 24px;
+   letter-spacing: 2.5px;
+   text-transform: uppercase;
+   color: #5d62b5;
+   background: url("../img/servises/title.svg") 0 -2px no-repeat;
+   padding: 0px 0px 0px 30px;
+   margin: 0px 0px 33px 0px;
+}
+.header-services__title {
+   font-weight: 900;
+   font-size: 36px;
+   line-height: 42px;
+   color: #000000;
+}
+.services__items {
+   display: flex;
+   row-gap: 24px;
+   flex-wrap: wrap;
+   margin: 0px -12px;
+}
+.services__item {
+   flex: 1 1 33.333%;
+   padding: 0px 12px;
+   min-width: 262px;
+}
+.item-services {
+   background: #ffffff;
+   border-radius: 20px;
+   padding: 50px 44px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   height: 100%;
+}
+.item-services:hover {
+   box-shadow: 2px 5px 16px 0px #000000;
+   transition: 0.3s all ease;
+}
+.item-services__icon {
+   width: 63px;
+   flex: 0 0 63px;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+}
+.item-services__icon img {
+   max-width: 100%;
+   max-height: 63px;
+}
+.item-services__icon:not(:last-child) {
+   margin: 0px 0px 33px 0px;
+}
+.item-services__title {
+   font-weight: 900;
+   font-size: 19px;
+   line-height: 26px;
+   color: #f2726f;
+}
+.item-services__title:not(:last-child) {
+   margin: 0px 0px 20px 0px;
+}
+.item-services__text {
+   line-height: 24px;
+   letter-spacing: 0.15px;
+   color: #4b4b4b;
+   flex: 1 1 auto;
+}
+.item-services__text:not(:last-child) {
+   margin: 0px 0px 20px 0px;
+}
+.services__batton {
+   align-self: center;
+   border-radius: 8px;
+   background-color: #f2726f;
+   text-transform: uppercase;
+   font-size: 12px;
+   font-weight: 700;
+   line-height: 2;
+   padding: 12px 25px;
+   text-align: center;
+   color: #fff;
+   margin: 66px 0px 0px 0px;
+}
+
+._batton {
+   align-self: center;
+   border-radius: 8px;
+   background-color: #34c759;
+   text-transform: uppercase;
+   font-size: 12px;
+   font-weight: 700;
+   line-height: 2;
+   padding: 12px 25px;
+   text-align: center;
+   color: #fff;
+}
+._batton:hover,
+.services__batton:hover {
+   box-shadow: 2px 2px 3px 3px grey;
+   transition: 0.2s all ease;
+}
+/*==========================================================================================================*/
+.work {
+   background-color: #000;
+   padding: 0px 0px 30px 0px;
+}
+.work__container {
+   max-width: 1100px;
+   margin: 0px auto;
+}
+.work__title {
+   font-size: 36px;
+   line-height: 90px;
+   text-align: center;
+   letter-spacing: 0.2em;
+   text-transform: capitalize;
+   color: #d9d9d9;
+   background: url("../img/work/bg.svg") center 96px / 342px no-repeat;
+   padding: 90px 0px 60px 0px;
+}
+.work__title::after {
+   content: "";
+   display: block;
+   background: #34c759;
+   width: 60px;
+   height: 2px;
+   margin: 28px auto 0px auto;
+}
+.work__items {
+   display: flex;
+   row-gap: 24px;
+   flex-wrap: wrap;
+   margin: 0px -12px;
+}
+.content__item {
+   flex: 1 1 25%;
+   padding: 0px 15px;
+   min-width: 262px;
+}
+
+.item-content {
+   border-radius: 6px;
+   height: 100%;
+   padding: 24px 24px 42px 24px;
+   background-color: #252525;
+   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item-content:hover {
+   background: #34c759;
+   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+   transition: 0.3s all ease;
+   transition-duration: 0.5s;
+}
+.content__item:hover .item-content__title {
+   color: #000;
+}
+.content__item:hover .item-content__text {
+   color: #000;
+}
+.content__item:hover .item-content__title::after {
+   background-color: #000;
+}
+.item-content__title {
+   font-size: 22px;
+   line-height: 26px;
+   letter-spacing: -0.275px;
+   text-transform: capitalize;
+   color: #ffffff;
+   text-align: center;
+}
+
+.item-content__title::after {
+   content: "";
+   display: block;
+   background: #34c759;
+   width: 58px;
+   height: 2px;
+   margin: 13px auto 24px auto;
+   transition-duration: 0.5s;
+}
+.item-content__text {
+   font-size: 13px;
+   line-height: 18px;
+   letter-spacing: -0.1625px;
+   color: rgba(255, 255, 255, 0.5);
+   text-align: center;
+}
+/*==========================================================================================================*/
+.footer {
+   font-family: "Poppins", sans-serif;
+   font-size: 36px;
+   line-height: 42px;
+   font-weight: 900;
+   color: #02133c;
+   text-align: center;
+   padding: 20px;
+}
